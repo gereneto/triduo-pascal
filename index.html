@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tríduo Pascal</title>
+  <meta name="description" content="Tríduo Pascal em latim e português: o texto das celebrações, um elemento por página, com as partituras e os áudios de ensaio do coral.">
+  <meta name="theme-color" content="#faf6ee">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <a class="pular" href="#app">Pular para o texto</a>
+
+  <header class="topo">
+    <div class="topo-int">
+      <a class="marca" href="#/">Tríduo Pascal</a>
+      <nav class="topo-nav" id="trilha" aria-label="Onde estou"></nav>
+      <button class="btn-topo" id="lingua" type="button" title="Latim, português ou os dois">LA·PT</button>
+      <button class="btn-topo redondo" id="tema" type="button" title="Tema claro ou escuro" aria-label="Alternar tema">◐</button>
+    </div>
+    <div class="barra-progresso" id="progresso" hidden><span></span></div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="rodape">
+    <p>Coral do Tríduo Pascal · textos do livreto da celebração · melodias do <a href="https://gregobase.selapa.net">GregoBase</a>, sintetizadas para ensaio</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="dados/audios.js"></script>
+  <script src="dados/quinta.js"></script>
+  <script src="dados/sexta.js"></script>
+  <script src="dados/vigilia.js"></script>
+</body>
+</html>
